@@ -8,11 +8,11 @@ const App = () => {
 
   return (
     <div>
-      {isUnlocked ? (
+      {/* {isUnlocked ? ( */}
         <StockData/>
-      ) : (
-        <LockScreen onUnlock={() => setIsUnlocked(true)} />
-      )}
+      {/* // ) : ( */}
+      {/* //   <LockScreen onUnlock={() => setIsUnlocked(true)} /> */}
+      {/* // )} */}
     </div>
   );
 };

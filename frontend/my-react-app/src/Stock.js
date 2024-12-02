@@ -22,7 +22,7 @@ const StockData = () => {
 
     const fetchStockData = async () => {
         try {
-            const response = await axios.post('http://127.0.0.1:5000/fetch_stock_data', {
+            const response = await axios.post('https://stockapp-58742455872.us-central1.run.app/fetch_stock_data', {
                 stock_name: stockSymbol,
             });
             setStockData(response.data);
@@ -34,7 +34,6 @@ const StockData = () => {
 
     return (
         <div style={{
-            backgroundColor: 'black',
         }}>
             <Container maxWidth="md" sx={{ mt: 4 }}>
                 <Typography variant="h4" component="h1" align="center" gutterBottom>
